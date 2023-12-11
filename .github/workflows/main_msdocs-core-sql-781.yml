@@ -22,9 +22,6 @@ jobs:
           dotnet-version: '7.x'
           include-prerelease: true
 
-      - name: dotnet install instana trace
-        run: dotnet add package Instana.Tracing.Core.Rewriter.Linux --version 1.263.1
-
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
